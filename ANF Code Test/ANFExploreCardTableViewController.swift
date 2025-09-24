@@ -22,6 +22,7 @@ class ANFExploreCardTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = self.tableView.dequeueReusableCell(withIdentifier: "ExploreContentCell", for: indexPath)
+        
         if let titleLabel = cell.viewWithTag(1) as? UILabel,
            let titleText = exploreData?[indexPath.row]["title"] as? String {
             titleLabel.text = titleText
@@ -34,5 +35,18 @@ class ANFExploreCardTableViewController: UITableViewController {
         }
         
         return cell
+    }
+}
+
+extension ANFExploreCardTableViewController {
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showDetail" {
+            if let indexPath = tableView.indexPathForSelectedRow, let data = exploreData?[indexPath.row] {
+                let detailVC = segue.destination as? ANFExploreCardDetailViewController
+                detailVC?.exploreData = data
+//                detailVC?.setupViews(exploreData: data)
+            }
+        }
     }
 }
