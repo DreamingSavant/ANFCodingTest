@@ -16,6 +16,22 @@ class ANFExploreCardTableViewController: UITableViewController {
         return nil
     }
     
+    private var viewModel = ANFExploreViewModel()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        Task {
+            do {
+                try await viewModel.getCards()
+                tableView.reloadData()
+            } catch {
+                print(error)
+            }
+            
+        }
+    }
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         exploreData?.count ?? 0
     }
@@ -24,14 +40,15 @@ class ANFExploreCardTableViewController: UITableViewController {
         let cell = self.tableView.dequeueReusableCell(withIdentifier: "ExploreContentCell", for: indexPath)
         
         if let titleLabel = cell.viewWithTag(1) as? UILabel,
-           let titleText = exploreData?[indexPath.row]["title"] as? String {
+           let titleText = viewModel.exploreCards?[indexPath.row].title {
             titleLabel.text = titleText
         }
         
-        if let imageView = cell.viewWithTag(2) as? UIImageView,
-           let name = exploreData?[indexPath.row]["backgroundImage"] as? String,
-           let image = UIImage(named: name) {
-            imageView.image = image
+        Task {
+            if let imageView = cell.viewWithTag(2) as? UIImageView, let name = viewModel.exploreCards?[indexPath.row].backgroundImage, let url = URL(string: name) {
+                let image = await viewModel.fetchImage(url: url.upgradingToHTTPS)
+                imageView.image = image
+            }
         }
         
         return cell
@@ -44,8 +61,7 @@ extension ANFExploreCardTableViewController {
         if segue.identifier == "showDetail" {
             if let indexPath = tableView.indexPathForSelectedRow, let data = exploreData?[indexPath.row] {
                 let detailVC = segue.destination as? ANFExploreCardDetailViewController
-                detailVC?.exploreData = data
-//                detailVC?.setupViews(exploreData: data)
+                detailVC?.exploreCard = viewModel.exploreCards?[indexPath.row]
             }
         }
     }

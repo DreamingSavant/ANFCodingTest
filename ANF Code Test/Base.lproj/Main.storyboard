@@ -84,13 +84,13 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7ew-xb-5MV">
                                         <rect key="frame" x="20" y="360" width="374" height="51"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top Description" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V6G-nR-ZwA">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top Description" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V6G-nR-ZwA">
                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="16"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mDy-Tc-OMt">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mDy-Tc-OMt">
                                                 <rect key="frame" x="0.0" y="16" width="374" height="19"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="Title">
@@ -102,7 +102,7 @@
                                                 </attributedString>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Code" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SmE-AP-1C9">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Code" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SmE-AP-1C9">
                                                 <rect key="frame" x="0.0" y="35" width="374" height="16"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                 <nil key="textColor"/>
@@ -114,7 +114,7 @@
                                             <constraint firstItem="mDy-Tc-OMt" firstAttribute="centerX" secondItem="7ew-xb-5MV" secondAttribute="centerX" id="yLO-xs-90p"/>
                                         </constraints>
                                     </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T&amp;C" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="27z-Pb-4e1">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T&amp;C" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="27z-Pb-4e1">
                                         <rect key="frame" x="20" y="431" width="374" height="13.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                         <nil key="textColor"/>
@@ -133,7 +133,7 @@
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="shopMenButtonPressed:" destination="lVU-2x-vEm" eventType="touchUpInside" id="dg6-OO-SHM"/>
+                                                    <action selector="shopButtonOnePressed:" destination="lVU-2x-vEm" eventType="touchUpInside" id="dg6-OO-SHM"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RQa-cB-Cnm">
@@ -146,7 +146,7 @@
                                                     <color key="titleColor" systemColor="labelColor"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="shopWomenButtonPressed:" destination="lVU-2x-vEm" eventType="touchUpInside" id="utZ-Wd-Rrf"/>
+                                                    <action selector="shopButtonTwoPressed:" destination="lVU-2x-vEm" eventType="touchUpInside" id="utZ-Wd-Rrf"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -179,9 +179,9 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="ShopWomenButton" destination="RQa-cB-Cnm" id="fQ8-uA-LKT"/>
                         <outlet property="discountCodeLabel" destination="SmE-AP-1C9" id="YoH-7A-eCU"/>
-                        <outlet property="shopMenButton" destination="kBw-XA-SXV" id="vHO-pO-Uey"/>
+                        <outlet property="shopButtonOne" destination="kBw-XA-SXV" id="vHO-pO-Uey"/>
+                        <outlet property="shopButtonTwo" destination="RQa-cB-Cnm" id="Jf5-hc-ngu"/>
                         <outlet property="termsAndConditionsLabel" destination="27z-Pb-4e1" id="Thm-XG-VHk"/>
                         <outlet property="titleImage" destination="o7y-Yv-v8C" id="QDR-FG-8xw"/>
                         <outlet property="titleLabel" destination="mDy-Tc-OMt" id="9tn-QF-5iJ"/>

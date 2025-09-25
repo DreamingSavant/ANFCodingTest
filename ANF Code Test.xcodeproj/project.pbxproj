@@ -21,6 +21,8 @@
 		DC7471E82E84A92A000C6590 /* ANFExploreCardDetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7471E72E84A92A000C6590 /* ANFExploreCardDetailViewControllerTests.swift */; };
 		DC7471EA2E84AA39000C6590 /* ANFTestJson.json in Resources */ = {isa = PBXBuildFile; fileRef = DC7471E92E84AA28000C6590 /* ANFTestJson.json */; };
 		DC7471EC2E84B4CB000C6590 /* ANFTestJson.json in Resources */ = {isa = PBXBuildFile; fileRef = DC7471E92E84AA28000C6590 /* ANFTestJson.json */; };
+		DC7471EE2E84B62E000C6590 /* ANFExploreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7471ED2E84B622000C6590 /* ANFExploreViewModel.swift */; };
+		DC7471F12E84C5D2000C6590 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7471F02E84C5CF000C6590 /* Helpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		DC7471E52E84A3AC000C6590 /* ANFNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ANFNetwork.swift; sourceTree = "<group>"; };
 		DC7471E72E84A92A000C6590 /* ANFExploreCardDetailViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ANFExploreCardDetailViewControllerTests.swift; sourceTree = "<group>"; };
 		DC7471E92E84AA28000C6590 /* ANFTestJson.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ANFTestJson.json; sourceTree = "<group>"; };
+		DC7471ED2E84B622000C6590 /* ANFExploreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ANFExploreViewModel.swift; sourceTree = "<group>"; };
+		DC7471F02E84C5CF000C6590 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,11 +96,12 @@
 		3E727ED126727088006C11AC /* ANF Code Test */ = {
 			isa = PBXGroup;
 			children = (
-				3E727F02267281F7006C11AC /* ANFExploreCardTableViewController.swift */,
+				DC7471F02E84C5CF000C6590 /* Helpers.swift */,
+				DC7471ED2E84B622000C6590 /* ANFExploreViewModel.swift */,
+				DC7471EF2E84C2C1000C6590 /* ViewController */,
 				3E727ED226727088006C11AC /* AppDelegate.swift */,
 				3E727ED426727088006C11AC /* SceneDelegate.swift */,
 				3E727ED826727088006C11AC /* Main.storyboard */,
-				DC7471E12E8478E4000C6590 /* ANFExploreCardDetailViewController.swift */,
 				3E727EDB2672708B006C11AC /* Assets.xcassets */,
 				3E727EDD2672708B006C11AC /* LaunchScreen.storyboard */,
 				3E727EE02672708B006C11AC /* Info.plist */,
@@ -116,6 +121,15 @@
 				DC7471E92E84AA28000C6590 /* ANFTestJson.json */,
 			);
 			path = "ANF Code TestTests";
+			sourceTree = "<group>";
+		};
+		DC7471EF2E84C2C1000C6590 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3E727F02267281F7006C11AC /* ANFExploreCardTableViewController.swift */,
+				DC7471E12E8478E4000C6590 /* ANFExploreCardDetailViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,7 +238,9 @@
 				DC7471E62E84A3B8000C6590 /* ANFNetwork.swift in Sources */,
 				DC7471E42E84A37E000C6590 /* ANFResponse.swift in Sources */,
 				3E727F03267281F7006C11AC /* ANFExploreCardTableViewController.swift in Sources */,
+				DC7471F12E84C5D2000C6590 /* Helpers.swift in Sources */,
 				3E727ED326727088006C11AC /* AppDelegate.swift in Sources */,
+				DC7471EE2E84B62E000C6590 /* ANFExploreViewModel.swift in Sources */,
 				3E727ED526727088006C11AC /* SceneDelegate.swift in Sources */,
 				DC7471E22E8478E4000C6590 /* ANFExploreCardDetailViewController.swift in Sources */,
 			);
