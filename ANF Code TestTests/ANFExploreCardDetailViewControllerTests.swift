@@ -24,7 +24,7 @@ final class ANFExploreCardDetailViewControllerTests: XCTestCase {
                 XCTFail("Could not instantiate ANFExploreCardDetailViewController from storyboard")
                 return
             }
-        vc.exploreData = try firstCard()
+        vc.exploreCard = try firstCard()
         vc.loadViewIfNeeded()
         sut = vc
     }
@@ -32,7 +32,6 @@ final class ANFExploreCardDetailViewControllerTests: XCTestCase {
     override func tearDownWithError() throws {
         try super.tearDownWithError()
         sut = nil
-        
     }
     
     func test_labelsArePopulated() throws {
@@ -48,17 +47,17 @@ final class ANFExploreCardDetailViewControllerTests: XCTestCase {
 }
 
 extension ANFExploreCardDetailViewControllerTests {
-    private func loadCardsFromFile() throws -> [[String: Any]] {
+    private func loadCardsFromFile() throws -> [ANFResponse] {
         let bundle = Bundle(for: type(of: self))
         guard let url = bundle.url(forResource: "ANFTestJson", withExtension: "json") else {
             throw NSError(domain: "MissingFile", code: -1)
         }
         let data = try Data(contentsOf: url)
-        let json = try JSONSerialization.jsonObject(with: data) as? [[String: Any]]
-        return json ?? []
+        let decoded = try! JSONDecoder().decode([ANFResponse].self, from: data)
+        return decoded
     }
 
-    private func firstCard() throws -> [AnyHashable: Any] {
+    private func firstCard() throws -> ANFResponse {
         let cards = try loadCardsFromFile()
         guard let card = cards.first else { throw NSError(domain: "NoFirstCard", code: -1) }
         return card

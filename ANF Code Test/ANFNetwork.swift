@@ -17,7 +17,6 @@ enum ANFEUrls {
 }
 
 protocol ANFNetworking {
-//    func fetchData<T: Decodable>(from url: URL, completion: @escaping (Result<T, Error>) -> Void)
     func fetch<T: Decodable>(_ type: T.Type, from url: URL) async throws -> T
     func fetchImage(from url: URL) async throws -> UIImage
 }

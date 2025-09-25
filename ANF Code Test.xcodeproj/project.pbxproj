@@ -23,6 +23,7 @@
 		DC7471EC2E84B4CB000C6590 /* ANFTestJson.json in Resources */ = {isa = PBXBuildFile; fileRef = DC7471E92E84AA28000C6590 /* ANFTestJson.json */; };
 		DC7471EE2E84B62E000C6590 /* ANFExploreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7471ED2E84B622000C6590 /* ANFExploreViewModel.swift */; };
 		DC7471F12E84C5D2000C6590 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7471F02E84C5CF000C6590 /* Helpers.swift */; };
+		DC7471F32E857DE1000C6590 /* ANFExploreViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7471F22E857DE1000C6590 /* ANFExploreViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		DC7471E92E84AA28000C6590 /* ANFTestJson.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ANFTestJson.json; sourceTree = "<group>"; };
 		DC7471ED2E84B622000C6590 /* ANFExploreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ANFExploreViewModel.swift; sourceTree = "<group>"; };
 		DC7471F02E84C5CF000C6590 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		DC7471F22E857DE1000C6590 /* ANFExploreViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ANFExploreViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,8 +118,9 @@
 			isa = PBXGroup;
 			children = (
 				3E727EE92672708B006C11AC /* ANFExploreCardTableViewControllerTests.swift */,
-				3E727EEB2672708B006C11AC /* Info.plist */,
 				DC7471E72E84A92A000C6590 /* ANFExploreCardDetailViewControllerTests.swift */,
+				DC7471F22E857DE1000C6590 /* ANFExploreViewModelTests.swift */,
+				3E727EEB2672708B006C11AC /* Info.plist */,
 				DC7471E92E84AA28000C6590 /* ANFTestJson.json */,
 			);
 			path = "ANF Code TestTests";
@@ -251,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E727EEA2672708B006C11AC /* ANFExploreCardTableViewControllerTests.swift in Sources */,
+				DC7471F32E857DE1000C6590 /* ANFExploreViewModelTests.swift in Sources */,
 				DC7471E82E84A92A000C6590 /* ANFExploreCardDetailViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
