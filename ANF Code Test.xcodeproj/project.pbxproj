@@ -15,15 +15,20 @@
 		3E727EDF2672708B006C11AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E727EDD2672708B006C11AC /* LaunchScreen.storyboard */; };
 		3E727EEA2672708B006C11AC /* ANFExploreCardTableViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E727EE92672708B006C11AC /* ANFExploreCardTableViewControllerTests.swift */; };
 		3E727F03267281F7006C11AC /* ANFExploreCardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E727F02267281F7006C11AC /* ANFExploreCardTableViewController.swift */; };
-		DC7471E22E8478E4000C6590 /* ANFExploreCardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7471E12E8478E4000C6590 /* ANFExploreCardDetailViewController.swift */; };
-		DC7471E42E84A37E000C6590 /* ANFResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7471E32E84A379000C6590 /* ANFResponse.swift */; };
-		DC7471E62E84A3B8000C6590 /* ANFNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7471E52E84A3AC000C6590 /* ANFNetwork.swift */; };
-		DC7471E82E84A92A000C6590 /* ANFExploreCardDetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7471E72E84A92A000C6590 /* ANFExploreCardDetailViewControllerTests.swift */; };
-		DC7471EA2E84AA39000C6590 /* ANFTestJson.json in Resources */ = {isa = PBXBuildFile; fileRef = DC7471E92E84AA28000C6590 /* ANFTestJson.json */; };
-		DC7471EC2E84B4CB000C6590 /* ANFTestJson.json in Resources */ = {isa = PBXBuildFile; fileRef = DC7471E92E84AA28000C6590 /* ANFTestJson.json */; };
-		DC7471EE2E84B62E000C6590 /* ANFExploreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7471ED2E84B622000C6590 /* ANFExploreViewModel.swift */; };
-		DC7471F12E84C5D2000C6590 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7471F02E84C5CF000C6590 /* Helpers.swift */; };
-		DC7471F32E857DE1000C6590 /* ANFExploreViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7471F22E857DE1000C6590 /* ANFExploreViewModelTests.swift */; };
+		DC7471F82E85E42E000C6590 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7471F42E85E42E000C6590 /* Product.swift */; };
+		DC7471F92E85E42E000C6590 /* ExploreContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7471F52E85E42E000C6590 /* ExploreContentCell.swift */; };
+		DC7471FA2E85E42E000C6590 /* ProductCardRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7471F62E85E42E000C6590 /* ProductCardRepository.swift */; };
+		DC7471FB2E85E42E000C6590 /* ProductCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7471F72E85E42E000C6590 /* ProductCardViewModel.swift */; };
+		DC7472012E85E480000C6590 /* ServiceClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7472002E85E480000C6590 /* ServiceClient.swift */; };
+		DC7472022E85E480000C6590 /* JsonClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7471FE2E85E480000C6590 /* JsonClient.swift */; };
+		DC7472032E85E480000C6590 /* JsonDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7471FD2E85E480000C6590 /* JsonDecoder.swift */; };
+		DC7472042E85E480000C6590 /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7471FF2E85E480000C6590 /* EndPoints.swift */; };
+		DC7472092E85E5B1000C6590 /* FakeProductCardRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7472072E85E5B1000C6590 /* FakeProductCardRepository.swift */; };
+		DC74720C2E85E5B1000C6590 /* FakeServiceClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7472082E85E5B1000C6590 /* FakeServiceClient.swift */; };
+		DC74720D2E85E5B1000C6590 /* FakeProductCardRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7472072E85E5B1000C6590 /* FakeProductCardRepository.swift */; };
+		DC74720F2E85E5B1000C6590 /* ProductCardRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7472062E85E5B1000C6590 /* ProductCardRepositoryTests.swift */; };
+		DC7472102E85E5B1000C6590 /* FakeServiceClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7472082E85E5B1000C6590 /* FakeServiceClient.swift */; };
+		DC7472152E85E96F000C6590 /* ProductCardViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7472112E85E7C2000C6590 /* ProductCardViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,14 +54,18 @@
 		3E727EE92672708B006C11AC /* ANFExploreCardTableViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ANFExploreCardTableViewControllerTests.swift; sourceTree = "<group>"; };
 		3E727EEB2672708B006C11AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E727F02267281F7006C11AC /* ANFExploreCardTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ANFExploreCardTableViewController.swift; sourceTree = "<group>"; };
-		DC7471E12E8478E4000C6590 /* ANFExploreCardDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ANFExploreCardDetailViewController.swift; sourceTree = "<group>"; };
-		DC7471E32E84A379000C6590 /* ANFResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ANFResponse.swift; sourceTree = "<group>"; };
-		DC7471E52E84A3AC000C6590 /* ANFNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ANFNetwork.swift; sourceTree = "<group>"; };
-		DC7471E72E84A92A000C6590 /* ANFExploreCardDetailViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ANFExploreCardDetailViewControllerTests.swift; sourceTree = "<group>"; };
-		DC7471E92E84AA28000C6590 /* ANFTestJson.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ANFTestJson.json; sourceTree = "<group>"; };
-		DC7471ED2E84B622000C6590 /* ANFExploreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ANFExploreViewModel.swift; sourceTree = "<group>"; };
-		DC7471F02E84C5CF000C6590 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
-		DC7471F22E857DE1000C6590 /* ANFExploreViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ANFExploreViewModelTests.swift; sourceTree = "<group>"; };
+		DC7471F42E85E42E000C6590 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		DC7471F52E85E42E000C6590 /* ExploreContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreContentCell.swift; sourceTree = "<group>"; };
+		DC7471F62E85E42E000C6590 /* ProductCardRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCardRepository.swift; sourceTree = "<group>"; };
+		DC7471F72E85E42E000C6590 /* ProductCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCardViewModel.swift; sourceTree = "<group>"; };
+		DC7471FD2E85E480000C6590 /* JsonDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonDecoder.swift; sourceTree = "<group>"; };
+		DC7471FE2E85E480000C6590 /* JsonClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonClient.swift; sourceTree = "<group>"; };
+		DC7471FF2E85E480000C6590 /* EndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
+		DC7472002E85E480000C6590 /* ServiceClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceClient.swift; sourceTree = "<group>"; };
+		DC7472062E85E5B1000C6590 /* ProductCardRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCardRepositoryTests.swift; sourceTree = "<group>"; };
+		DC7472072E85E5B1000C6590 /* FakeProductCardRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeProductCardRepository.swift; sourceTree = "<group>"; };
+		DC7472082E85E5B1000C6590 /* FakeServiceClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeServiceClient.swift; sourceTree = "<group>"; };
+		DC7472112E85E7C2000C6590 /* ProductCardViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCardViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,9 +107,8 @@
 		3E727ED126727088006C11AC /* ANF Code Test */ = {
 			isa = PBXGroup;
 			children = (
-				DC7471F02E84C5CF000C6590 /* Helpers.swift */,
-				DC7471ED2E84B622000C6590 /* ANFExploreViewModel.swift */,
-				DC7471EF2E84C2C1000C6590 /* ViewController */,
+				DC7471FC2E85E470000C6590 /* RestClient */,
+				DC7471EF2E84C2C1000C6590 /* ProductCardsList */,
 				3E727ED226727088006C11AC /* AppDelegate.swift */,
 				3E727ED426727088006C11AC /* SceneDelegate.swift */,
 				3E727ED826727088006C11AC /* Main.storyboard */,
@@ -108,8 +116,6 @@
 				3E727EDD2672708B006C11AC /* LaunchScreen.storyboard */,
 				3E727EE02672708B006C11AC /* Info.plist */,
 				3E4AB9392676D86100C79456 /* exploreData.json */,
-				DC7471E32E84A379000C6590 /* ANFResponse.swift */,
-				DC7471E52E84A3AC000C6590 /* ANFNetwork.swift */,
 			);
 			path = "ANF Code Test";
 			sourceTree = "<group>";
@@ -118,21 +124,36 @@
 			isa = PBXGroup;
 			children = (
 				3E727EE92672708B006C11AC /* ANFExploreCardTableViewControllerTests.swift */,
-				DC7471E72E84A92A000C6590 /* ANFExploreCardDetailViewControllerTests.swift */,
-				DC7471F22E857DE1000C6590 /* ANFExploreViewModelTests.swift */,
+				DC7472062E85E5B1000C6590 /* ProductCardRepositoryTests.swift */,
+				DC7472072E85E5B1000C6590 /* FakeProductCardRepository.swift */,
+				DC7472082E85E5B1000C6590 /* FakeServiceClient.swift */,
+				DC7472112E85E7C2000C6590 /* ProductCardViewModelTests.swift */,
 				3E727EEB2672708B006C11AC /* Info.plist */,
-				DC7471E92E84AA28000C6590 /* ANFTestJson.json */,
 			);
 			path = "ANF Code TestTests";
 			sourceTree = "<group>";
 		};
-		DC7471EF2E84C2C1000C6590 /* ViewController */ = {
+		DC7471EF2E84C2C1000C6590 /* ProductCardsList */ = {
 			isa = PBXGroup;
 			children = (
+				DC7471F42E85E42E000C6590 /* Product.swift */,
+				DC7471F52E85E42E000C6590 /* ExploreContentCell.swift */,
+				DC7471F62E85E42E000C6590 /* ProductCardRepository.swift */,
+				DC7471F72E85E42E000C6590 /* ProductCardViewModel.swift */,
 				3E727F02267281F7006C11AC /* ANFExploreCardTableViewController.swift */,
-				DC7471E12E8478E4000C6590 /* ANFExploreCardDetailViewController.swift */,
 			);
-			path = ViewController;
+			path = ProductCardsList;
+			sourceTree = "<group>";
+		};
+		DC7471FC2E85E470000C6590 /* RestClient */ = {
+			isa = PBXGroup;
+			children = (
+				DC7471FD2E85E480000C6590 /* JsonDecoder.swift */,
+				DC7471FE2E85E480000C6590 /* JsonClient.swift */,
+				DC7471FF2E85E480000C6590 /* EndPoints.swift */,
+				DC7472002E85E480000C6590 /* ServiceClient.swift */,
+			);
+			path = RestClient;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,7 +239,6 @@
 				3E727EDF2672708B006C11AC /* LaunchScreen.storyboard in Resources */,
 				3E727EDC2672708B006C11AC /* Assets.xcassets in Resources */,
 				3E727EDA26727088006C11AC /* Main.storyboard in Resources */,
-				DC7471EA2E84AA39000C6590 /* ANFTestJson.json in Resources */,
 				3E4AB93A2676D86100C79456 /* exploreData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -227,7 +247,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC7471EC2E84B4CB000C6590 /* ANFTestJson.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,14 +257,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC7471E62E84A3B8000C6590 /* ANFNetwork.swift in Sources */,
-				DC7471E42E84A37E000C6590 /* ANFResponse.swift in Sources */,
 				3E727F03267281F7006C11AC /* ANFExploreCardTableViewController.swift in Sources */,
-				DC7471F12E84C5D2000C6590 /* Helpers.swift in Sources */,
 				3E727ED326727088006C11AC /* AppDelegate.swift in Sources */,
-				DC7471EE2E84B62E000C6590 /* ANFExploreViewModel.swift in Sources */,
+				DC7471F82E85E42E000C6590 /* Product.swift in Sources */,
+				DC7471F92E85E42E000C6590 /* ExploreContentCell.swift in Sources */,
+				DC7472012E85E480000C6590 /* ServiceClient.swift in Sources */,
+				DC7472022E85E480000C6590 /* JsonClient.swift in Sources */,
+				DC7472032E85E480000C6590 /* JsonDecoder.swift in Sources */,
+				DC7472042E85E480000C6590 /* EndPoints.swift in Sources */,
+				DC7472092E85E5B1000C6590 /* FakeProductCardRepository.swift in Sources */,
+				DC74720C2E85E5B1000C6590 /* FakeServiceClient.swift in Sources */,
+				DC7471FA2E85E42E000C6590 /* ProductCardRepository.swift in Sources */,
+				DC7471FB2E85E42E000C6590 /* ProductCardViewModel.swift in Sources */,
 				3E727ED526727088006C11AC /* SceneDelegate.swift in Sources */,
-				DC7471E22E8478E4000C6590 /* ANFExploreCardDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,9 +277,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC7472152E85E96F000C6590 /* ProductCardViewModelTests.swift in Sources */,
 				3E727EEA2672708B006C11AC /* ANFExploreCardTableViewControllerTests.swift in Sources */,
-				DC7471F32E857DE1000C6590 /* ANFExploreViewModelTests.swift in Sources */,
-				DC7471E82E84A92A000C6590 /* ANFExploreCardDetailViewControllerTests.swift in Sources */,
+				DC74720D2E85E5B1000C6590 /* FakeProductCardRepository.swift in Sources */,
+				DC74720F2E85E5B1000C6590 /* ProductCardRepositoryTests.swift in Sources */,
+				DC7472102E85E5B1000C6590 /* FakeServiceClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
