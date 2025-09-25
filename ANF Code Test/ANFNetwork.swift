@@ -21,6 +21,12 @@ protocol ANFNetworking {
     func fetchImage(from url: URL) async throws -> UIImage
 }
 
+extension ANFNetworking {
+    func fetchImage(from url: URL) async throws -> UIImage {
+        return UIImage()
+    }
+}
+
 class ANFNetwork: ANFNetworking {    
     func fetch<T: Decodable>(_ type: T.Type, from url: URL) async throws -> T {
             let (data, _) = try await URLSession.shared.data(from: url)

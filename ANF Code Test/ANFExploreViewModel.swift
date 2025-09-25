@@ -10,7 +10,6 @@ import UIKit
 
 class ANFExploreViewModel {
     
-    
     var exploreCards: [ANFResponse]?
     
     var aNFNetwork: ANFNetworking
